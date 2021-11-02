@@ -1,0 +1,352 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+body{
+	font: 16px/28px arial, sans-serif;
+	background-color: #eaeaea;
+	color: white;
+	background-image: url(pramuka1.png);
+	background-size: 25%;
+	background-attachment:fixed;
+}
+
+.topbar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 40px;
+	background-color: black;
+	border-bottom: 3px solid white;
+	z-index: 9999;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	text-indent: 10px;
+	font: 16px/28px monaco, sans-serif;
+}
+
+.container {
+	width: 980px;
+	margin: 80px auto;
+	position: relative;
+	background-color: rgba(51, 51, 51, 95%);
+	border-top: 3px solid black;
+}
+
+.instagram {
+	width: 200px;
+	height: 200px;
+	background-image: url(logo2.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	top: 0px;
+	right: -100px;
+	position: absolute;
+	text-indent: -99999px
+}
+
+.header {
+	padding: 20px;
+	padding-bottom: 10px;
+}
+
+.header .judul {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+/*liquid fill animated nav bar
+@import url('https://fonts.googleapis.com/css2?family=Roboto+condensed:ital@1&display=swap')
+
+body .liquid {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html,
+body .liquid {
+height: 100%;
+}
+
+body .liquid {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #111;
+font-family: 'Roboto condensed', sans-serif;
+line-height: 1.5;
+}
+
+#menu {
+position: relative;
+border: none;
+border-radius: 10cm;
+display: flex;
+list-style: none;
+background: #111;
+box-shadow: 40px 40px 40px #000000;
+border: 1px solid white;
+padding: 1px;
+}
+
+#menu li a {
+position: relative;
+padding: 0.1cm 2cm;
+font-size: 18px;
+border: none;
+outline: none;
+color: #fff;
+display: inline-block;
+text-decoration: none;
+z-index: 3;
+}
+
+#menu .liquid1 {
+position: absolute;
+display: inline-block;
+height: 3cm;
+border-radius: 10cm;
+transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1.05);
+}
+
+#menu .liquid1 {
+background: rgb(226, 15, 15);
+z-index: 2;
+}
+
+#menu .squeeze {
+transform: scale(0.9);
+}*/
+
+.header ul li {
+	display: inline-block;
+	margin-right: 1px;
+	margin-top: 20px;
+	/* improve */
+	justify-content: center;
+	background-color: #111;
+	font-family: 'Roboto condensed', sans-serif;
+	line-height: 1cm;
+	position: relative;
+	border-radius: 1cm;
+	box-shadow: 10px 10px 10px #000000;
+	border: none;
+}
+
+.header a {
+	text-decoration: none;
+	color: lightskyblue;
+	padding: 3px;
+}
+
+.header a:hover {
+	/*background-color: gold;
+	color: white;
+	/* improve */
+	height: 1cm;
+	border-radius: 2cm;
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1.05);
+	background: rgb(226, 15, 15);
+	z-index: 2;
+	transform: scale(0.9);
+}
+
+.hero {
+	background-image: url(hero.png);
+	height: 280px;
+	border-bottom: 5px solid purple;
+	background-size: cover;
+	border-top: 5px solid purple;
+	background-position: 0 -70px;
+}
+
+.main {
+	width: 600px;
+	padding: 20px;
+	box-sizing: border-box;
+	float: left;
+}
+
+.main h2 {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.main .penulis {
+	font-size: 11px;
+	margin-top: -5px;
+}
+
+.main .penulis a {
+	color: lightskyblue;
+	text-decoration: none;
+}
+
+.main .penulis a:hover {
+	background-color: gold;
+	color: white;
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1.05);
+	z-index: 2;
+	transform: scale(0.9);
+}
+
+.main p {
+	margin-bottom: 10px;
+	font-size: 13px;
+}
+
+/* deskripsi */
+.main h4 {
+	text-indent: 10px;
+}
+
+.main ol {
+	text-indent: 15px;
+	font-size: 12px;
+}
+
+.main h5 {
+	color: lightskyblue;
+}
+
+.main ol {
+	color: lightskyblue;
+}
+
+/*	sidebar */
+.sidebar {
+	width: 300px;
+	float: right;
+	padding: 20px;
+}
+
+.sidebar h3 {
+	font-weight: bold;
+	color: white;
+}
+
+.sidebar img {
+	width: 70px;
+	height: 70px;
+	float: left;
+	padding-right: 10px;
+}
+
+.sidebar p {
+	font-size: 12px;
+	line-height: 18px;
+	font: arial;
+}
+
+.sidebar ol li {
+	font-size: 15px;
+	color: lightskyblue;
+	text-decoration: none;
+}
+
+.sidebar ol li:hover {
+	background-color: gold;
+	color: white;
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1.05);
+	z-index: 2;
+	transform: scale(0.9);
+}
+
+
+
+/*	sidebar */
+
+.footer {
+	background-color: black;
+	padding: 2px;
+}
+
+.footer .copy {
+	color: white;
+	text-align: center;
+	font-size: 12px;
+}
+
+/*style judul*/
+
+.content h3 {
+	font-weight: bold;
+}
+
+
+/*gambar*/
+
+.main .lambang {
+	background-image: url(lambang1.png);
+	height: 280px;
+	background-size: 280px;
+	background-repeat: no-repeat;
+}
+
+
+
+
+/* clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
